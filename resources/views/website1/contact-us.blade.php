@@ -21,22 +21,23 @@
             </div>
         </div>
         <!-- Inner Banner End -->
-        
+
         <!-- Contact Area -->
         <div class="contact-area pt-100 pb-70">
             <div class="container contact-width">
                 <div class="row">
+
                     <div class="col-lg-4 col-sm-6">
-                        <div class="contact-card">
-                            <i class='flaticon-call'></i>
-                            <ul>
-                                <li>
-                                    <a href="tel:{{websiteInfo_hlp('phone')}}">
-                                        {{websiteInfo_hlp('phone')}}
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <a href="tel:{{websiteInfo_hlp('phone')}}" style="display: block">
+                            <div class="contact-card">
+                        <i class='flaticon-call'></i>
+                        <ul>
+                            <li>
+                                {{websiteInfo_hlp('phone')}}
+                            </li>
+                        </ul>
+                    </div>
+                        </a>
                     </div>
 
                     <div class="col-lg-4 col-sm-6">
@@ -64,7 +65,7 @@
             </div>
         </div>
         <!-- Contact Area End -->
-        
+
         <!-- Contact Section -->
         <section class="contact-section pb-100">
             <div class="container">
