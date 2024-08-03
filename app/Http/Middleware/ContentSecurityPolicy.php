@@ -17,10 +17,8 @@ class ContentSecurityPolicy
     public function handle(Request $request, Closure $next)
     {
         $response = $next($request);
-
-        // Set the Content Security Policy header
-        $response->headers->set('Content-Security-Policy', "default-src 'self'; style-src 'self' 'unsafe-inline';");
-
+        $cspHeader = "default-src 'self'; style-src 'self' 'unsafe-inline';";
+        $response->headers->set('Content-Security-Policy', $cspHeader);
         return $response;
     }
 }
