@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('website1/ltr/css/style.css')}}">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="{{ asset('website1/ltr/css/responsive.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
 @else
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('website1/rtl/css/bootstrap.min.css')}}">
@@ -45,6 +46,7 @@
     <link rel="stylesheet" href="{{ asset('website1/rtl/css/responsive.css')}}">
     <!-- RTL CSS -->
     <link rel="stylesheet" href="{{ asset('website1/rtl/css/rtl.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
 
     <style>
         .bxs-chevron-right:before {
