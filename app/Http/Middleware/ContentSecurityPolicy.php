@@ -17,7 +17,9 @@ class ContentSecurityPolicy
     public function handle(Request $request, Closure $next)
     {
         $response = $next($request);
-        $cspHeader = "default-src 'self'; style-src 'self' 'unsafe-inline';";
+        $cspHeader = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://sihad.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com;";
+
+
         $response->headers->set('Content-Security-Policy', $cspHeader);
         return $response;
     }
