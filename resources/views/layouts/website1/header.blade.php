@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="{{ asset('website1/ltr/css/style.css')}}">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="{{ asset('website1/ltr/css/responsive.css')}}">
-    <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
 @else
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('website1/rtl/css/bootstrap.min.css')}}">
@@ -46,7 +45,6 @@
     <link rel="stylesheet" href="{{ asset('website1/rtl/css/responsive.css')}}">
     <!-- RTL CSS -->
     <link rel="stylesheet" href="{{ asset('website1/rtl/css/rtl.css')}}">
-    <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
 
     <style>
         .bxs-chevron-right:before {
@@ -58,7 +56,6 @@
             transform: rotate(-90deg);
         }
     </style>
-
 @endif
 
 
@@ -68,7 +65,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
-
+    .hide-secttion{
+        display: none;
+    }
 </style>
 
 
@@ -217,16 +216,5 @@
     }
 
 
-
-</style>
-
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<style>
-
-</style>
-<!-- ======= whatsapp ======= -->
-<style>
 
 </style>
