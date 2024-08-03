@@ -39,10 +39,10 @@
                     <div class="footer-list ml-50">
                         <h3>{{ __('site/app.services') }}</h3>
                         <ul>
-                            @foreach ( $services as $Service )
+                            @foreach ( $services as $service )
                                 <li>
                                     <i class='bx bxs-chevron-right'></i>
-                                    <a href="{{route('service.details',$service->id)}}">{{$Service->title}}</a>
+                                    <a href="{{route('service.details',$service->id)}}">{{$service->title}}</a>
                                 </li>
                             @endforeach
 
