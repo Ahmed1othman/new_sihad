@@ -42,7 +42,7 @@
                             @foreach ( $services as $Service )
                                 <li>
                                     <i class='bx bxs-chevron-right'></i>
-                                    <a href="">{{$Service->title}}</a>
+                                    <a href="{{route('service.details',$service->id)}}">{{$Service->title}}</a>
                                 </li>
                             @endforeach
 
