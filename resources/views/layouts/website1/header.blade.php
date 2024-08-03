@@ -47,14 +47,7 @@
     <link rel="stylesheet" href="{{ asset('website1/rtl/css/rtl.css')}}">
 
     <style>
-        .bxs-chevron-right:before {
-            content: "\eceb";
-        }
 
-        .main-nav nav .navbar-nav .nav-item a:hover i {
-            -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-        }
     </style>
 @endif
 

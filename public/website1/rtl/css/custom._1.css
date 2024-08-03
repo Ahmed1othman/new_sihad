@@ -1,0 +1,8 @@
+.bxs-chevron-right:before {
+    content: "\eceb";
+}
+
+.main-nav nav .navbar-nav .nav-item a:hover i {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
