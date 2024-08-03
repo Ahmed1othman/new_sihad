@@ -23,7 +23,7 @@ $this->theme = 'website1';
 
 require __DIR__ . '/auth.php';
 
-Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath','countVisitor']], function () { //...
+Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath','countVisitor','ContentSecurityPolicy']], function () { //...
 
     ################## Start Route Get Home ###########################
     Route::get('/', [HomeController::class, 'index'])->name('home');
