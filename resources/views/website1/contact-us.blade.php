@@ -4,7 +4,7 @@
 @endsection
 @section('content')
         <!-- Inner Banner -->
-        <div class="inner-banner inner-bg6">
+        <div class="inner-banner inner-bg6" style="background-image: url({{asset('storage/front/'.websiteInfo_hlp('contact_us_background_image'))}});">
             <div class="container">
                 <div class="inner-title text-center">
                     <h3>{{__('site/app.contact_us')}}</h3>
