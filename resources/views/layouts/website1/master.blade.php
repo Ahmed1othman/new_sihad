@@ -25,7 +25,7 @@
     @yield('content')
 
    @include('layouts.website.contact_buttons._whatsapp')
-@include('layouts.website.contact_buttons._call')
+    @include('layouts.website.contact_buttons._call')
     @include('layouts.website1.footer')
     @include('layouts.website1.footer-script')
 </body>
