@@ -164,10 +164,6 @@ return [
     'total_features'=>'Total features',
     'total_news'=>'Total news',
     'total_orders'=>'Total orders',
-    'slider-option' => 'Slider Option',
-    'create_slider' => 'Create Slider',
-    'create_slider' => 'Create Slider',
-    'contact_us' => 'Contact Us',
     'contact_us_details' => 'Contact Us Details',
     'subscriptions' => 'Subscriptions',
     'dashboard' => 'Control Panel',
@@ -175,6 +171,7 @@ return [
     'total_contacts' => 'Total Contacts',
     'total_subscriptions' => 'Total Subscriptions',
     'our_news_offers_detials' => 'News Detials',
+    'google_map_location' => 'Google map location',
 
 
 

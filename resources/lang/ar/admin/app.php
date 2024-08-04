@@ -174,6 +174,7 @@ return [
   'services_background_image' => 'خلفية صفحة خدماتنا',
   'testimonials' => 'اراء العملاء',
   'our_news_offers_detials' => 'تفاصيل الخبر',
+  'google_map_location' => 'لينك الموقع علي خرائط جوجل',
 
 
 ];

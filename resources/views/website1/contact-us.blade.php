@@ -53,12 +53,14 @@
 
                     <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
                         <div class="contact-card">
-                            <i class='flaticon-pin'></i>
-                            <ul>
-                                <li>
-                                    {{websiteInfo_hlp('address')}}
-                                </li>
-                            </ul>
+                            <a href="{{websiteInfo_hlp('google_map_location')}}" target="_blank">
+                                <i class='flaticon-pin'></i>
+                                <ul>
+                                    <li>
+                                        {{websiteInfo_hlp('address')}}
+                                    </li>
+                                </ul>
+                            </a>
                         </div>
                     </div>
                 </div>

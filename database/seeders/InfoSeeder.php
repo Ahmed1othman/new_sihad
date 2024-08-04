@@ -111,6 +111,7 @@ class InfoSeeder extends Seeder
         ['option' => 'whats_up','value' => '','type' => 'string'],
         ['option' => 'address_en','value' => '','type' => 'string'],
         ['option' => 'address_ar','value' => '','type' => 'string'],
+        ['option' => 'google_map_location','value' => '','type' => 'string'],
         ['option' => 'fb_link','value' => '','type' => 'string'],
         ['option' => 'twitter_link','value' => '','type' => 'string'],
         ['option' => 'linked_link','value' => '','type' => 'string'],

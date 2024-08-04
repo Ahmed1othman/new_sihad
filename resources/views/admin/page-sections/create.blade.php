@@ -79,7 +79,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <label for="order_view" class="form-label">{{ __('admin/app.order_view') }} <span class="text-danger"></span></label>
-                                        <input type="number     " name="order_view" class="form-control" id="order_view" required></input>
+                                        <input type="number" name="order_view" class="form-control" id="order_view" required></input>
                                     </div>
                                     {{--section type--}}
                                     <div class="col-md-12">

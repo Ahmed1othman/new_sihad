@@ -7,7 +7,7 @@
         height:60px;
         bottom:50px;
         left:50px;
-        background-color: #fc0000;
+        background-color: #ffbd03;
         color:#FFF;
         border-radius:50px;
         text-align:center;

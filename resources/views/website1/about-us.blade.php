@@ -46,6 +46,17 @@
         </div>
         <!-- About Area End -->
 
+
+        @if(websiteInfo_hlp('portfolio_pdf'))
+            <hr>
+            <div class="text-center">
+{{--                               <a href="{{route('downloadPdf')}}" class="btn btn-primary btn-lg" style="color: white; width: 40%">{{__('site/app.download_our_cv')}} <i class="fa fa-download"></i></a>--}}
+                <a href="{{asset('storage/front/'.websiteInfo_hlp('portfolio_pdf'))}}" target="_blank" class="default-btn" style="color: white; width: 40%">{{__('site/app.download_our_cv')}} <i class="fa fa-download"></i></a>
+            </div>
+
+            <hr>
+        @endif
+
         <!-- Counter Area -->
         <div class="counter-area pt-100 pb-70">
             <div class="container">
