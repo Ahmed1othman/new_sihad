@@ -58,7 +58,7 @@
                                 <i class='flaticon-pin'></i>
                                 <ul>
                                     <li>
-                                        <?php echo e(websiteInfo_hlp('address')); ?>
+                                        <?php echo e(websiteInfo_hlp('address_'.App::getLocale())); ?>
 
                                     </li>
                                 </ul>
@@ -69,6 +69,29 @@
             </div>
         </div>
         <!-- Contact Area End -->
+
+        <!-- Social Media start-->
+        <div class="social-media-container">
+            <div class="website-name">
+                <a href="<?php echo e(route('home')); ?>" class="website-link">
+                    <h2><?php echo e(websiteInfo_hlp('website_name_' . app()->getLocale())); ?></h2>
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="<?php echo e(websiteInfo_hlp('fb_link')); ?>" class="social-icon fb">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="<?php echo e(websiteInfo_hlp('twitter_link')); ?>" class="social-icon twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="<?php echo e(websiteInfo_hlp('instagram_link')); ?>" class="social-icon instagram">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="<?php echo e(websiteInfo_hlp('linked_link')); ?>" class="social-icon linkedin">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
 
         <!-- Contact Section -->
         <section class="contact-section pb-100">

@@ -208,6 +208,61 @@
         font-family: {!! websiteInfo_hlp('font_family') !!};
     }
 
+    .social-media-container {
+        text-align: center;
+        padding-bottom: 20px;
+    }
 
+    .website-name {
+        margin-bottom: 18px;
+    }
+
+    .website-link h2 {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #111;
+        color: white;
+        font-size: 16px;
+        margin-right: 10px;
+        transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .social-icon:hover {
+        transform: scale(1.1);
+        background-color: #333;
+    }
+
+    /* Additional styles for specific social media icons */
+    .fb {
+        background-color: #3b5998;
+    }
+
+    .twitter {
+        background-color: #1da1f2;
+    }
+
+    .instagram {
+        background-color: #e4405f;
+    }
+
+    .linkedin {
+        background-color: #0077b5;
+    }
 
 </style>
