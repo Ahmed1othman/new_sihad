@@ -265,4 +265,9 @@
         background-color: #0077b5;
     }
 
+    .snapchat {
+        background-color: #fffc00;
+        color: #000; /* Snapchat's icon color */
+    }
+
 </style>

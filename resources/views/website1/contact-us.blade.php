@@ -88,6 +88,10 @@
                 <a href="{{ websiteInfo_hlp('linked_link') }}" class="social-icon linkedin">
                     <i class="fa fa-linkedin"></i>
                 </a>
+
+                <a href="{{ websiteInfo_hlp('snapchat_link') }}" class="social-icon snapchat">
+                    <i class="fa fa-snapchat-ghost"></i>
+                </a>
             </div>
         </div>
 
