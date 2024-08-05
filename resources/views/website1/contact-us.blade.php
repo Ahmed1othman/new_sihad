@@ -42,12 +42,14 @@
 
                     <div class="col-lg-4 col-sm-6">
                         <div class="contact-card">
-                            <i class="flaticon-paper-plane"></i>
-                            <ul>
-                                <li>
-                                    <a href="mailto:{{websiteInfo_hlp('email')}}">{{websiteInfo_hlp('email')}}</a>
-                                </li>
-                            </ul>
+                            <a href="mailto:{{websiteInfo_hlp('email')}}">
+                                <i class="flaticon-paper-plane"></i>
+                                <ul>
+                                    <li>
+                                        <a href="mailto:{{websiteInfo_hlp('email')}}">{{websiteInfo_hlp('email')}}</a>
+                                    </li>
+                                </ul>
+                            </a>
                         </div>
                     </div>
 
@@ -88,7 +90,6 @@
                 <a href="{{ websiteInfo_hlp('linked_link') }}" class="social-icon linkedin">
                     <i class="fa fa-linkedin"></i>
                 </a>
-
                 <a href="{{ websiteInfo_hlp('snapchat_link') }}" class="social-icon snapchat">
                     <i class="fa fa-snapchat-ghost"></i>
                 </a>

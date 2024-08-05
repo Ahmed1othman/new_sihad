@@ -72,25 +72,48 @@
                         <ul>
                             @if(websiteInfo_hlp('phone'))
                                 <li>
-                                    <i class='bx bxs-chevron-right'></i>
+                                    <i class="fa fa-phone"></i>
                                     <a href="tel:{{websiteInfo_hlp('phone')}}">{{websiteInfo_hlp('phone')}}</a>
                                 </li>
                             @endif
 
                             @if(websiteInfo_hlp('email'))
                                 <li>
-                                    <i class='bx bxs-chevron-right'>{{websiteInfo_hlp('email')}}</i>
+                                    <i class="fa fa-mail-forward"></i>
                                     <a href="mailto:{{websiteInfo_hlp('email')}}"></a>
                                 </li>
                             @endif
 
-                            @if(websiteInfo_hlp('address'))
+                            @if(websiteInfo_hlp('google_map_location'))
                             <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                {{websiteInfo_hlp('address')}}
+
+                                <a href="{{websiteInfo_hlp('google_map_location')}}" target="_blank"><i class="fa fa-location-arrow"></i></a>
                             </li>
                             @endif
 
+                                @if(websiteInfo_hlp('twitter_link'))
+                                    <li>
+                                        <a href="{{websiteInfo_hlp('twitter_link')}}" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                @endif
+
+                                @if(websiteInfo_hlp('facebook_link'))
+                                    <li>
+                                        <a href="{{websiteInfo_hlp('facebook_link')}}" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                @endif
+
+                                @if(websiteInfo_hlp('instagram_link'))
+                                    <li>
+                                        <a href="{{websiteInfo_hlp('instagram_link')}}" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                @endif
+
+                                @if(websiteInfo_hlp('snapchat_link'))
+                                    <li>
+                                        <a href="{{websiteInfo_hlp('snapchat_link')}}" target="_blank"><i class="fa fa-snapchat"></i></a>
+                                    </li>
+                                @endif
 
                         </ul>
                     </div>

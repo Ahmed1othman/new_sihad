@@ -265,5 +265,10 @@
         background-color: #0077b5;
     }
 
+    .snapchat {
+        background-color: #fffc00;
+        color: #000; /* Snapchat's icon color */
+    }
+
 </style>
 <?php /**PATH E:\new work\alaskar\resources\views/layouts/website1/header.blade.php ENDPATH**/ ?>
