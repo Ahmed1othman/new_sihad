@@ -37,7 +37,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="footer-list ml-50">
                         <h3><?php echo e(__('site/app.services')); ?></h3>
                         <ul>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="footer-list">
                         <h3><?php echo e(__('site/app.Quick Links')); ?></h3>
                         <ul>
@@ -68,35 +68,29 @@
                         </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-list ml-20">
-                        <h3><?php echo e(trans('site/app.contact_us')); ?></h3>
-                        <ul>
-                            <?php if(websiteInfo_hlp('phone')): ?>
-                                <li>
-                                    <i class='bx bxs-chevron-right'></i>
-                                    <a href="tel:<?php echo e(websiteInfo_hlp('phone')); ?>"><?php echo e(websiteInfo_hlp('phone')); ?></a>
-                                </li>
-                            <?php endif; ?>
-
-                            <?php if(websiteInfo_hlp('email')): ?>
-                                <li>
-                                    <i class='bx bxs-chevron-right'><?php echo e(websiteInfo_hlp('email')); ?></i>
-                                    <a href="mailto:<?php echo e(websiteInfo_hlp('email')); ?>"></a>
-                                </li>
-                            <?php endif; ?>
-
-                            <?php if(websiteInfo_hlp('address')): ?>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                <?php echo e(websiteInfo_hlp('address')); ?>
-
-                            </li>
-                            <?php endif; ?>
-
-
-                        </ul>
+            <div class="row">
+                <div class="social-media-container">
+                    <div class="website-name">
+                        <h3><?php echo e(__('site/app.contact_us')); ?></h3>
+                    </div>
+                    <div class="social-icons">
+                        <a href="<?php echo e(websiteInfo_hlp('fb_link')); ?>" class="social-icon fb">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="<?php echo e(websiteInfo_hlp('twitter_link')); ?>" class="social-icon twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="<?php echo e(websiteInfo_hlp('instagram_link')); ?>" class="social-icon instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="<?php echo e(websiteInfo_hlp('linked_link')); ?>" class="social-icon linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="<?php echo e(websiteInfo_hlp('snapchat_link')); ?>" class="social-icon snapchat">
+                            <i class="fa fa-snapchat-ghost"></i>
+                        </a>
                     </div>
                 </div>
             </div>

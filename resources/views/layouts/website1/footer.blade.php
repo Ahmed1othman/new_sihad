@@ -35,7 +35,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="footer-list ml-50">
                         <h3>{{ __('site/app.services') }}</h3>
                         <ul>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="footer-list">
                         <h3>{{ __('site/app.Quick Links') }}</h3>
                         <ul>
@@ -65,57 +65,29 @@
                         </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-list ml-20">
-                        <h3>{{trans('site/app.contact_us')}}</h3>
-                        <ul>
-                            @if(websiteInfo_hlp('phone'))
-                                <li>
-                                    <i class="fa fa-phone"></i>
-                                    <a href="tel:{{websiteInfo_hlp('phone')}}">{{websiteInfo_hlp('phone')}}</a>
-                                </li>
-                            @endif
-
-                            @if(websiteInfo_hlp('email'))
-                                <li>
-                                    <i class="fa fa-mail-forward"></i>
-                                    <a href="mailto:{{websiteInfo_hlp('email')}}"></a>
-                                </li>
-                            @endif
-
-                            @if(websiteInfo_hlp('google_map_location'))
-                            <li>
-
-                                <a href="{{websiteInfo_hlp('google_map_location')}}" target="_blank"><i class="fa fa-location-arrow"></i></a>
-                            </li>
-                            @endif
-
-                                @if(websiteInfo_hlp('twitter_link'))
-                                    <li>
-                                        <a href="{{websiteInfo_hlp('twitter_link')}}" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                @endif
-
-                                @if(websiteInfo_hlp('facebook_link'))
-                                    <li>
-                                        <a href="{{websiteInfo_hlp('facebook_link')}}" target="_blank"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                @endif
-
-                                @if(websiteInfo_hlp('instagram_link'))
-                                    <li>
-                                        <a href="{{websiteInfo_hlp('instagram_link')}}" target="_blank"><i class="fa fa-instagram"></i></a>
-                                    </li>
-                                @endif
-
-                                @if(websiteInfo_hlp('snapchat_link'))
-                                    <li>
-                                        <a href="{{websiteInfo_hlp('snapchat_link')}}" target="_blank"><i class="fa fa-snapchat"></i></a>
-                                    </li>
-                                @endif
-
-                        </ul>
+            <div class="row">
+                <div class="social-media-container">
+                    <div class="website-name">
+                        <h3>{{__('site/app.contact_us')}}</h3>
+                    </div>
+                    <div class="social-icons">
+                        <a href="{{ websiteInfo_hlp('fb_link') }}" class="social-icon fb">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="{{ websiteInfo_hlp('twitter_link') }}" class="social-icon twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="{{ websiteInfo_hlp('instagram_link') }}" class="social-icon instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="{{ websiteInfo_hlp('linked_link') }}" class="social-icon linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="{{ websiteInfo_hlp('snapchat_link') }}" class="social-icon snapchat">
+                            <i class="fa fa-snapchat-ghost"></i>
+                        </a>
                     </div>
                 </div>
             </div>

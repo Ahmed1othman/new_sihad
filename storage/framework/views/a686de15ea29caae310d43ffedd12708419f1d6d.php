@@ -92,7 +92,6 @@
                 <a href="<?php echo e(websiteInfo_hlp('linked_link')); ?>" class="social-icon linkedin">
                     <i class="fa fa-linkedin"></i>
                 </a>
-
                 <a href="<?php echo e(websiteInfo_hlp('snapchat_link')); ?>" class="social-icon snapchat">
                     <i class="fa fa-snapchat-ghost"></i>
                 </a>
