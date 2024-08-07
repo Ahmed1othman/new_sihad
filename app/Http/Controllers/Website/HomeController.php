@@ -8,6 +8,7 @@ use App\Models\ContactUs;
 use App\Models\Custom;
 use App\Models\feature;
 use App\Models\news;
+use App\Models\OfferPrice;
 use App\Models\order;
 use App\Models\project;
 use App\Models\Service;
@@ -67,12 +68,14 @@ class HomeController extends Controller
         $this->seo()->opengraph()->setDescription('مؤسسة الصيهد للمقاولات واعمال العزل, هي واحدة من اهم وافضل الشركات في هذا المجال في الرياض');
         return view($this->theme.'.index', $date);
     }
+
     public function siteprojects()
     {
         $data['projects'] = project::whereActive(1)->orderByDesc('id')->paginate(8);
         $data['services'] = Service::whereActive(1)->orderByDesc('id')->get();
         return view($this->theme.'.projects', $data);
     }
+
     public function projectDetails($id)
     {
         $data['services'] = Service::whereActive(1)->orderByDesc('id')->paginate(9);
@@ -90,6 +93,7 @@ class HomeController extends Controller
 
         return view($this->theme.'.project-details', $data);
     }
+
     public function siteservices()
     {
         $data['services'] = Service::whereActive(1)->orderByDesc('id')->paginate(9);
@@ -108,6 +112,7 @@ class HomeController extends Controller
 
         return view($this->theme.'.services', $data);
     }
+
     public function serviceDetails($id)
     {
         $data['services'] = Service::whereActive(1)->orderByDesc('id')->get();
@@ -125,29 +130,31 @@ class HomeController extends Controller
 
         return view($this->theme.'.service-details', $data);
     }
+
     public function customPage($slug)
     {
         $data['services'] = Service::whereActive(1)->orderByDesc('id')->get();
         $data['row'] =Custom::where('name_'.App::getLocale(),$slug)->first();
-        if($row){
+        if($data['row']){
             return view($this->theme.'.custom-page', $data);
         }
         return redirect('/');
 
     }
+
     public function sitenews()
     {
         $data['services'] = Service::whereActive(1)->orderByDesc('id')->get();
         $data['news'] = news::whereActive(1)->orderByDesc('id')->paginate(8);
         return view($this->theme.'.news', $data);
     }
+
     public function newsDetails($id)
     {
         $data['services'] = Service::whereActive(1)->orderByDesc('id')->get();
         $data['new']  = news::find($id);
         return view($this->theme.'.news-details', $data);
     }
-
 
     public function Orders(Request $request)
     {
@@ -211,9 +218,6 @@ class HomeController extends Controller
 
     }
 
-
-
-
     public function subscription(Request $request)
     {
         try {
@@ -264,7 +268,6 @@ class HomeController extends Controller
         }
     }
 
-
     public function downloadPdf(){
 //        try {
             $pdf = websiteInfo_hlp('portfolio_pdf');
@@ -275,6 +278,36 @@ class HomeController extends Controller
 //            }catch (\Exception $e){
 //
 //            }
+
+    }
+
+    public function orderOfferPrice(Request $request)
+    {
+
+//        try {
+            $offerPrice = new OfferPrice();
+            $offerPrice->name = $request->name;
+            $offerPrice->phone_number = $request->phone_number;
+            $offerPrice->required_service = $request->required_service;
+            $offerPrice->required_meters = $request->required_meters;
+            $offerPrice->required_date = $request->required_date;
+            $offerPrice->details = $request->details;
+            $data = $offerPrice->save();
+
+            if ($data) {
+                $response = ['code' => 1, 'msg' => __('admin/app.your_data_send_successfully')];
+//                $this->sentNotificationMail($offerPrice,'هذا تنبيه بوجود طلب عرض سعر جديد',route('offer-price.show',$offerPrice->id),'طلب عرض سعر جديد');
+
+            } else {
+                $response = ['code' => 0, 'msg' => __('admin/app.some_thing_error')];
+            }
+            return json_encode($response);
+
+//        } catch (\Exception $e) {
+//            DB::rollback();
+//            $response = ['code' => 0, 'msg' => __('admin/app.some_thing_error')];
+//            return json_encode($response);
+//        }
 
     }
 }

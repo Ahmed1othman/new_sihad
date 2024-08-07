@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\ContactUs;
+use App\Models\OfferPrice;
 use App\Models\order;
 use App\Models\SliderOption;
 use App\Models\Visitor;
@@ -183,6 +184,13 @@ class HomeController extends Controller
         $order = order::findOrFail($id);
         return view('admin.orders.show-details', compact('order'));
     }
+   public function showOfferPrice($id)
+    {
+        $order = OfferPrice::findOrFail($id);
+        return view('admin.offer-price.show-details', compact('order'));
+    }
+
+
 
     public function showContact($id)
     {

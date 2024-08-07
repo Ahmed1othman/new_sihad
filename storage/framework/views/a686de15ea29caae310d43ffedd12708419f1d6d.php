@@ -122,7 +122,7 @@
 
                                 <div class="col-lg-12 col-sm-12">
                                     <div class="form-group">
-                                        <input type="email" type="text" id="contact_email" name="email" placeholder="<?php echo e(__('site/app.your_email')); ?>" class="form-control">
+                                        <input type="email" id="contact_email" name="email" placeholder="<?php echo e(__('site/app.your_email')); ?>" class="form-control">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>

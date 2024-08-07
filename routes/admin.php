@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\InfoController;
 use App\Http\Controllers\Admin\NavBarController;
 use App\Http\Controllers\Admin\newsController;
+use App\Http\Controllers\Admin\OfferPriceController;
 use App\Http\Controllers\Admin\PageSectionController;
 use App\Http\Controllers\Admin\ProjectsController;
 use App\Http\Controllers\Admin\ServiceController;
@@ -38,6 +39,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['au
     Route::get('/contacts', [HomeController::class, 'contacts'])->name('contacts');
     Route::get('/contacts/{id}', [HomeController::class, 'showContact'])->name('contact-us.show');
     Route::get('/all-orders', [HomeController::class, 'AllOrders'])->name('AllOrders');
+    Route::get('/offer-price/{id}', [HomeController::class, 'showOfferPrice'])->name('offer-price.show');
     Route::get('/orders/{id}', [HomeController::class, 'showOrder'])->name('orders.show');
     Route::post('/deleted-orders', [HomeController::class, 'deletedOrders'])->name('deletedOrders');
     Route::post('/deleted-contacts', [HomeController::class, 'deleteddata'])->name('deleteddata');
@@ -109,4 +111,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['au
     Route::resource('subscription', SubscriptionController::class);
     ###################### End Routes resource news ######################
 
+    ####################### Start Routes resource news ######################
+    Route::resource('admin-offer-price', OfferPriceController::class);
+    ###################### End Routes resource news ######################
 });

@@ -54,4 +54,11 @@ return [
     'project_detials' => 'Project Details',
     'service_detials' => 'Services Details',
 
+    'offer_price' => 'Offier Price',
+    'offer-price' => 'Offer Price',
+    'order_offer_price' => 'Order Offer Price',
+    'required_service' => 'Required Service',
+    'required_date' => 'Required Date',
+    'service_details' => 'Service Details',
+    'required_meters' => 'Required Meters',
 ];

@@ -172,8 +172,15 @@ return [
     'total_subscriptions' => 'Total Subscriptions',
     'our_news_offers_detials' => 'News Detials',
     'google_map_location' => 'Google map location',
+    'offer_price' => 'Offer Price Requests',
 
 
+    'offer-price' => 'Offer Price',
+    'order_offer_price' => 'Order Offer Price',
+    'required_service' => 'Required Service',
+    'required_date' => 'Required Date',
+    'details' =>    'Details',
+    'required_meters' => 'Required Meters',
 
 
 ];

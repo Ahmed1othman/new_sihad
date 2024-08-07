@@ -132,3 +132,60 @@ function submitContactUs() {
         });
 
 }
+
+
+function submit_offer_price() {
+    var offer_price_name = document.getElementById("offer_price_name");
+    var offer_price_phone_number = document.getElementById("offer_price_phone_number");
+    var offer_price_required_service = document.getElementById("offer_price_required_service");
+    var offer_price_required_meters = document.getElementById("offer_price_required_meters");
+    var offer_price_required_date = document.getElementById("offer_price_required_date");
+    var offer_price_details = document.getElementById("offer_price_details");
+
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (offer_price_name.value === '') {
+        round_error_noti('من فضلك ادخل اسمك ')
+        return;
+    }
+    if (offer_price_phone_number.value === '') {
+        round_error_noti('من فضلك ادخل رقم هاتفك')
+        return;
+    }
+    $.ajax({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        url: app_url + "/" + lang + "/offer-price",
+        type: 'POST',
+        data: {
+            _token: $('meta[name="csrf-token"]').attr('content'),
+            name: offer_price_name.value,
+            phone_number: offer_price_phone_number.value,
+            details: offer_price_details.value,
+            required_date: offer_price_required_date.value,
+            required_meters: offer_price_required_meters.value,
+            required_service: offer_price_required_service.value,
+        },
+        async: true,
+        success: function(data) {
+            var obj = JSON.parse(data);
+            if (obj.code === 0) {
+                round_error_noti(obj.msg)
+            } else {
+                round_success_noti(obj.msg)
+                offer_price_name.value = '';
+                offer_price_phone_number.value = '';
+                offer_price_details.value = ''
+                offer_price_required_date.value = '';
+                offer_price_required_meters.value = '';
+                offer_price_required_service.value = '';
+            }
+        },
+        error: function(error) {
+            round_error_noti()
+
+        }
+    });
+
+}

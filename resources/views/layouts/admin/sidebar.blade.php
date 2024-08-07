@@ -45,6 +45,7 @@
                 <li><a href="{{ route('navbar.index') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.navbar') }}</a></li>
                 <li><a href="{{ route('subscription.index') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.subscriptions') }}</a></li>
                 <li><a href="{{ route('contacts') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.contacts') }}</a></li>
+                <li><a href="{{ route('admin-offer-price.index') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.offer_price') }}</a></li>
             </ul>
         </li>
 

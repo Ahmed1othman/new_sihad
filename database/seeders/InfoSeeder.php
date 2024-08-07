@@ -75,6 +75,14 @@ class InfoSeeder extends Seeder
         ['option' => 'testimonial_pragraph_en','value' => 'مؤسسة الصيهد هي واحدة من اكبر وافضل الشركات العاملة بالمقاولات واعمال العزل بالمملكة العربية السعودية, نستخدم افضل واحدث الاساليب والامكانيات وبأعلي جودة ممكنة.','type' => 'text'],
         ['option' => 'testimonial_image','value' => 'testimonial.png','type' => 'image'],
 
+            //testimonials data
+            ['option' => 'offer_price_title_ar','value' => 'احصل على عرض الأسعار المجاني الخاص بك','type' => 'string'],
+            ['option' => 'offer_price_title_en','value' => 'احصل على عرض الأسعار المجاني الخاص بك','type' => 'string'],
+            ['option' => 'offer_price_pragraph_ar','value' => 'هل تبحث عن خدمة موثوقة وبأسعار معقولة؟ لا تحتاج لمزيد من البحث! احصل على عرض أسعار مجاني اليوم وانظر كيف يمكننا مساعدتك. فريقنا ملتزم بتزويدك بأفضل ما هو ممكن. اتصل بنا الآن للبدء.','type' => 'text'],
+            ['option' => 'offer_price_pragraph_en','value' => 'هل تبحث عن خدمة موثوقة وبأسعار معقولة؟ لا تحتاج لمزيد من البحث! احصل على عرض أسعار مجاني اليوم وانظر كيف يمكننا مساعدتك. فريقنا ملتزم بتزويدك بأفضل ما هو ممكن. اتصل بنا الآن للبدء.','type' => 'text'],
+            ['option' => 'offer_price_image','value' => 'offer_price.png','type' => 'image'],
+
+
         //news and posts data
         ['option' => 'news_posts_title_ar','value' => 'اكبر شركة للمقاولات واعمال العزل بالرياض','type' => 'string'],
         ['option' => 'news_posts_title_en','value' => 'اكبر شركة للمقاولات واعمال العزل بالرياض','type' => 'string'],
@@ -101,6 +109,7 @@ class InfoSeeder extends Seeder
         ['option' => 'news_background_image','value' => 'news.png','type' => 'image'],
         ['option' => 'footer_background_image','value' => 'footer.png','type' => 'image'],
         ['option' => 'contact_background_image','value' => 'contact.png','type' => 'image'],
+        ['option' => 'offer_price_background_image','value' => 'offer_price.png','type' => 'image'],
 
         //contacts data
         ['option' => 'email','value' => '','type' => 'string'],

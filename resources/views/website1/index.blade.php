@@ -15,7 +15,9 @@
                         <div class="banner-btn">
                             <a href="{{route('contactus')}}" class="default-btn">{{__('site/app.contact_us')}}</a>
                             <a href="{{route('aboutus')}}" class="default-btn active">{{__('site/app.about_us')}}</a>
+                            <a href="{{ route('offer-price')}}" class="default-btn active">{{ __('site/app.offer-price') }}</a>
                         </div>
+
                     </div>
                 </div>
 

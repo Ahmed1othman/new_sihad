@@ -58,7 +58,6 @@ return [
     'why_choose_us' => 'لماذا تختارنا؟',
     'Leave_your_information' => 'اترك بياناتك والبريد الالكتروني لك. وسوف نتواصل معك في اسرع وقت.',
     'Request A Call Back' => 'تريد منا التواصل معك ؟',
-    'Request A Call Back' => 'تريد منا التواصل معك ؟',
     'services_details' => 'تفاصيل الخدمات',
     'projects_details' => 'تفاصيل المشاريع',
     'Know More'=>'اعرف المزيد',
@@ -71,4 +70,11 @@ return [
     'service_detials' => 'تفاصيل الخدمة',
 
 
+    'offer_price' => 'طلب عرض سعر مجاني',
+    'offer-price' => 'طلب عرض سعر مجاني',
+    'order_offer_price' => 'طلب عرض سعر',
+    'required_service' => 'الخدمة المطلوبة',
+    'required_date' => 'الوقت المطلوب',
+    'service_details' => 'وصف الخدمة المطلوب',
+    'required_meters' => 'الامتار المطلوبة تقريبا',
 ];

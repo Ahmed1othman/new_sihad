@@ -45,6 +45,7 @@
                 <li><a href="<?php echo e(route('navbar.index')); ?>"><i class="bx bx-right-arrow-alt"></i><?php echo e(__('admin/app.navbar')); ?></a></li>
                 <li><a href="<?php echo e(route('subscription.index')); ?>"><i class="bx bx-right-arrow-alt"></i><?php echo e(__('admin/app.subscriptions')); ?></a></li>
                 <li><a href="<?php echo e(route('contacts')); ?>"><i class="bx bx-right-arrow-alt"></i><?php echo e(__('admin/app.contacts')); ?></a></li>
+                <li><a href="<?php echo e(route('admin-offer-price.index')); ?>"><i class="bx bx-right-arrow-alt"></i><?php echo e(__('admin/app.offer_price')); ?></a></li>
             </ul>
         </li>
 

@@ -55,6 +55,15 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
     })->name('contactus');
     ################## End Route Get contact-us ###########################
 
+    ################## Start Route Get Offer Price ###########################
+    Route::get('/offer-price', function () {
+        $data['services'] = Service::whereActive(1)->orderByDesc('id')->get();
+        return view($this->theme.'.offer-price',$data);
+    })->name('offer-price');
+    ################## End Route Get Offer Price ###########################
+
+
+
     ################## Start Route Get site-services ###########################
     Route::get('/site-services', [HomeController::class, 'profile'])->name('siteservice');
     ################## End Route Get site-services ###########################
@@ -87,6 +96,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
     Route::post('/site-projects',[HomeController::class , 'subscription' ])->name('subscription');
     Route::post('/contactus',[HomeController::class , 'contactus' ])->name('contactusstore');
+    Route::post('/offer-price',[HomeController::class , 'orderOfferPrice' ])->name('offerpricestore');
     Route::get('/pdf',[HomeController::class , 'downloadPdf' ])->name('downloadPdf');
 });
 

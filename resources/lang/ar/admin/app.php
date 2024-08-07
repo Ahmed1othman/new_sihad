@@ -175,6 +175,14 @@ return [
   'testimonials' => 'اراء العملاء',
   'our_news_offers_detials' => 'تفاصيل الخبر',
   'google_map_location' => 'لينك الموقع علي خرائط جوجل',
+  'offer_price' => 'طلبات عرض السعر',
+  'phone_number' => 'رقم الموبايل',
 
+    'offer-price' => 'طلب عرض سعر مجاني',
+    'order_offer_price' => 'طلب عرض سعر',
+    'required_service' => 'الخدمة المطلوبة',
+    'required_date' => 'الوقت المطلوب',
+    'details' => 'وصف الخدمة المطلوب',
+    'required_meters' => 'الامتار المطلوبة تقريبا',
 
 ];

@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('content'); ?>
     <!-- Main Banner -->
     <div class="main-banner">
@@ -16,7 +15,9 @@
                         <div class="banner-btn">
                             <a href="<?php echo e(route('contactus')); ?>" class="default-btn"><?php echo e(__('site/app.contact_us')); ?></a>
                             <a href="<?php echo e(route('aboutus')); ?>" class="default-btn active"><?php echo e(__('site/app.about_us')); ?></a>
+                            <a href="<?php echo e(route('offer-price')); ?>" class="default-btn active"><?php echo e(__('site/app.offer-price')); ?></a>
                         </div>
+
                     </div>
                 </div>
 

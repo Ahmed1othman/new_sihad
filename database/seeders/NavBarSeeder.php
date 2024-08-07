@@ -22,5 +22,6 @@ class NavBarSeeder extends Seeder
         NavBar::create(['title' =>'News','route'=>'sitenews']);
         NavBar::create(['title' =>'Projects','route'=>'siteprojects']);
         NavBar::create(['title' =>'Contact Us','route'=>'contactus']);
+        NavBar::create(['title' =>'Offer Price','route'=>'offer-price']);
     }
 }
