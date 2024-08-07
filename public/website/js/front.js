@@ -148,6 +148,15 @@ function submit_offer_price() {
         round_error_noti('من فضلك ادخل اسمك ')
         return;
     }
+    if (offer_price_required_service.value === '') {
+        round_error_noti('من فضلك اختر الخدمة المطلوبة ')
+        return;
+    }
+
+    if (offer_price_required_date.value === '') {
+        round_error_noti('من فضلك حدد التاريخ المطلوب لابدء الخدمة ')
+        return;
+    }
     if (offer_price_phone_number.value === '') {
         round_error_noti('من فضلك ادخل رقم هاتفك')
         return;
