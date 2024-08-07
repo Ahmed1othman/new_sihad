@@ -284,7 +284,7 @@ class HomeController extends Controller
     public function orderOfferPrice(Request $request)
     {
 
-//        try {
+        try {
             $offerPrice = new OfferPrice();
             $offerPrice->name = $request->name;
             $offerPrice->phone_number = $request->phone_number;
@@ -303,11 +303,11 @@ class HomeController extends Controller
             }
             return json_encode($response);
 
-//        } catch (\Exception $e) {
-//            DB::rollback();
-//            $response = ['code' => 0, 'msg' => __('admin/app.some_thing_error')];
-//            return json_encode($response);
-//        }
+        } catch (\Exception $e) {
+            DB::rollback();
+            $response = ['code' => 0, 'msg' =>$e->getMessage()];
+            return json_encode($response);
+        }
 
     }
 }
