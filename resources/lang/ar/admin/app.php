@@ -156,6 +156,7 @@ return [
   'testimonial_pragraph_ar' => 'مقال اراء عملائنا بالعربية',
   'testimonial_pragraph_en' => 'مقال اراء عملائنا بالعربية',
   'testimonial_image' => 'صورة اراء عملائنا',
+  'offer_price_image' => 'صورة عرض سعر',
   'news_posts_title_ar' => 'عنوان  اخبارنا وعروصنا بالعربية',
   'news_posts_title_en' => 'عنوان اخبارنا وعروضنا بلانجليزية',
   'news_posts_pragraph_ar' => 'مقال اخبارنا وعروضنا بالعربية',
