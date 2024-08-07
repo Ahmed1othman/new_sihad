@@ -98,8 +98,9 @@
                                 </div>
 
                                 <div class="col-lg-12 col-sm-12">
-                                    <div class="form-group">
-                                        <input type="date" id="offer_price_required_date" name="required_date" placeholder="{{ __('site/app.required_date') }}" class="form-control">
+                                    <div class="form-group position-relative">
+                                        <input type="date" id="offer_price_required_date" name="required_date" class="form-control">
+                                        <span id="date-placeholder" class="form-control-placeholder">{{ __('site/app.required_date') }}</span>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>

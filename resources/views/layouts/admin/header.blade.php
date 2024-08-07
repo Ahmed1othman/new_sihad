@@ -64,7 +64,30 @@
     .t1-b-1 {
         font-family: Cairo;
     }
+
+    .form-group {
+        position: relative;
+    }
+
+    .form-control-placeholder {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #aaa;
+        pointer-events: none;
+        transition: all 0.2s;
+    }
+
+    .form-control:not(:placeholder-shown) + .form-control-placeholder,
+    .form-control:focus + .form-control-placeholder {
+        opacity: 0;
+        visibility: hidden;
+    }
+
 </style>
+
+
 <link rel="stylesheet" type="text/css" href="{{asset('admin_dashboard/assets/css/coloris.min.css')}}">
 
 

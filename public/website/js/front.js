@@ -198,3 +198,28 @@ function submit_offer_price() {
     });
 
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var dateInput = document.getElementById('offer_price_required_date');
+    var datePlaceholder = document.getElementById('date-placeholder');
+
+    // Show or hide the placeholder based on the input value
+    function togglePlaceholder() {
+        if (dateInput.value) {
+            datePlaceholder.style.display = 'none';
+        } else {
+            datePlaceholder.style.display = 'block';
+        }
+    }
+
+    // Initial check
+    togglePlaceholder();
+
+    // Event listeners for focus, blur, and input
+    dateInput.addEventListener('focus', function() {
+        datePlaceholder.style.display = 'none';
+    });
+
+    dateInput.addEventListener('blur', togglePlaceholder);
+    dateInput.addEventListener('input', togglePlaceholder);
+});

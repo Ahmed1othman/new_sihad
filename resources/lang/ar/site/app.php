@@ -75,7 +75,7 @@ return [
     'offer-price' => 'طلب عرض سعر مجاني',
     'order_offer_price' => 'طلب عرض سعر',
     'required_service' => 'الخدمة المطلوبة',
-    'required_date' => 'الوقت المطلوب',
+    'required_date' => 'الوقت المطلوب لبدء العمل',
     'service_details' => 'وصف الخدمة المطلوب',
     'required_meters' => 'الامتار المطلوبة تقريبا',
 ];
