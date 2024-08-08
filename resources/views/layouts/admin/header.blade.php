@@ -39,10 +39,13 @@
 <link href="{{ asset('admin_dashboard/assetsEn/css/icons.css') }}" rel="stylesheet">
 <!-- Theme Style CSS -->
 
+
 <link rel="stylesheet" href="{{ asset('admin_dashboard/assetsEn/css/dark-theme.css') }}" />
 <link rel="stylesheet" href="{{ asset('admin_dashboard/assetsEn/css/semi-dark.css') }}" />
 <link rel="stylesheet" href="{{ asset('admin_dashboard/assetsEn/css/header-colors.css') }}" />
 @endif
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css"
       rel="stylesheet" />
 <style>

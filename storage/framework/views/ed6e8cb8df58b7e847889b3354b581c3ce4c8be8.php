@@ -39,10 +39,13 @@
 <link href="<?php echo e(asset('admin_dashboard/assetsEn/css/icons.css')); ?>" rel="stylesheet">
 <!-- Theme Style CSS -->
 
+
 <link rel="stylesheet" href="<?php echo e(asset('admin_dashboard/assetsEn/css/dark-theme.css')); ?>" />
 <link rel="stylesheet" href="<?php echo e(asset('admin_dashboard/assetsEn/css/semi-dark.css')); ?>" />
 <link rel="stylesheet" href="<?php echo e(asset('admin_dashboard/assetsEn/css/header-colors.css')); ?>" />
 <?php endif; ?>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css"
       rel="stylesheet" />
 <style>
@@ -64,7 +67,30 @@
     .t1-b-1 {
         font-family: Cairo;
     }
+
+    .form-group {
+        position: relative;
+    }
+
+    .form-control-placeholder {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #aaa;
+        pointer-events: none;
+        transition: all 0.2s;
+    }
+
+    .form-control:not(:placeholder-shown) + .form-control-placeholder,
+    .form-control:focus + .form-control-placeholder {
+        opacity: 0;
+        visibility: hidden;
+    }
+
 </style>
+
+
 <link rel="stylesheet" type="text/css" href="<?php echo e(asset('admin_dashboard/assets/css/coloris.min.css')); ?>">
 
 

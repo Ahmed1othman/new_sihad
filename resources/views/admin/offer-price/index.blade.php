@@ -16,6 +16,14 @@
                             <tr>
                                 <th>#</th>
                                 <th>{{ __('admin/app.phone_number') }}</th>
+
+{{--                                <th><i class="fa fa-whatsapp"--}}
+{{--                                       style="font-size: 24px; /* Adjust the size as needed */--}}
+{{--                                           color: #25D366; /* WhatsApp green color */--}}
+{{--                                           transition: color 0.3s ease, transform 0.3s ease;"--}}
+{{--                                       onmouseover="this.style.color='#128C7E'; this.style.transform='scale(1.1)';"--}}
+{{--                                       onmouseout="this.style.color='#25D366'; this.style.transform='scale(1)';">--}}
+{{--                                    </i></th>--}}
                                 <th>{{ __('admin/app.name') }}</th>
                                 <th>{{ __('admin/app.required_service') }}</th>
                                 <th>{{ __('admin/app.required_meters') }}</th>
@@ -28,6 +36,17 @@
                             <tr id="row_{{$row->id}}">
                                 <td>{{$loop->iteration}}</td>
                                 <td>{{$row->phone_number}}</td>
+{{--                                <td>--}}
+{{--                                    <a href="https://wa.me/{{$row->phone_number}}?text={{ urlencode(' اهلا بيك يا '.$row->name.' بنتواصل معاك للرد علي طلب عرض سعر بشأن '.$row->required_service) }}" style="background-color: #25D366; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px;" target="_blank">--}}
+{{--                                        <i class="fa fa-whatsapp"--}}
+{{--                                           style="font-size: 24px; /* Adjust the size as needed */--}}
+{{--                                           color: #25D366; /* WhatsApp green color */--}}
+{{--                                           transition: color 0.3s ease, transform 0.3s ease;"--}}
+{{--                                           onmouseover="this.style.color='#128C7E'; this.style.transform='scale(1.1)';"--}}
+{{--                                           onmouseout="this.style.color='#25D366'; this.style.transform='scale(1)';">--}}
+{{--                                        </i>--}}
+{{--                                    </a>--}}
+{{--                                </td>--}}
                                 <td>{{$row->name}}</td>
                                 <td>{{$row->required_service}}</td>
                                 <td>{{$row->required_meters}}</td>

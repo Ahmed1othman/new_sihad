@@ -78,13 +78,17 @@
                                 <div class="col-lg-12 col-sm-12">
                                     <div class="form-group">
                                         <select id="offer_price_required_service" name="required_service" class="form-control">
-                                            <option value="">{{ __('site/app.required_service') }}</option>
-                                            <option value="عزل أسطح المباني">عزل أسطح المباني</option>
-                                            <option value="عزل أسطح المنزل">عزل أسطح المنزل</option>
-                                            <option value="عزل أسطح المرافق">عزل أسطح المرافق</option>
-                                            <option value="عزل الحمامات">عزل الحمامات</option>
-                                            <option value="عزل مطابخ ضد المياه">عزل مطابخ ضد المياه</option>
-                                            <option value="عزل جدران المطبخ">عزل جدران المطبخ</option>
+                                            <option value="" readonly="readonly" disabled selected>{{ __('site/app.required_service') }}</option>
+                                            @foreach($services as $service)
+                                                <option value="{{$service->title}}">{{$service->title}}</option>
+                                            @endforeach
+
+{{--                                            <option value="عزل أسطح المباني">عزل أسطح المباني</option>--}}
+{{--                                            <option value="عزل أسطح المنزل">عزل أسطح المنزل</option>--}}
+{{--                                            <option value="عزل أسطح المرافق">عزل أسطح المرافق</option>--}}
+{{--                                            <option value="عزل الحمامات">عزل الحمامات</option>--}}
+{{--                                            <option value="عزل مطابخ ضد المياه">عزل مطابخ ضد المياه</option>--}}
+{{--                                            <option value="عزل جدران المطبخ">عزل جدران المطبخ</option>--}}
                                             <option value="اخري">اخري</option>
                                         </select>
                                     </div>
